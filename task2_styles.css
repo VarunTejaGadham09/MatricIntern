@@ -1,0 +1,37 @@
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: 'Verdana', sans-serif; /* New font */
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7a0dd9; /* New header color */
+    color: #ffffff;
+    padding: 40px 0; /* Increased padding */
+    font-size: 3em; /* Larger font size */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px; /* Increased padding */
+    margin: 20px; /* Increased margin */
+    background: #ffffff; /* White background for sections */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333333; /* Dark footer color */
+    color: #ffffff;
+    padding: 20px 0; /* Adjusted padding */
+    font-size: 1.5em; /* Adjusted font size */
+}
