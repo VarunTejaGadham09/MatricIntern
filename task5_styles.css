@@ -1,0 +1,122 @@
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: 'Verdana', sans-serif; /* New font */
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7a0dd9; /* New header color */
+    color: #ffffff;
+    padding: 40px 0; /* Increased padding */
+    font-size: 3em; /* Larger font size */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px; /* Increased padding */
+    margin: 20px; /* Increased margin */
+    background: #ffffff; /* White background for sections */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0; /* Margin for the form */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 10px 0; /* Margin for input fields */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+button {
+    padding: 10px;
+    background-color: #7a0dd9; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: #5a0bb9; /* Darker button color on hover */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333333; /* Dark footer color */
+    color: #ffffff;
+    padding: 20px 0; /* Adjusted padding */
+    font-size: 1.5em; /* Adjusted font size */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile View */
+@media (max-width: 767px) {
+    header {
+        font-size: 2em; /* Smaller font size for mobile */
+        padding: 20px 0; /* Reduced padding */
+    }
+
+    section {
+        padding: 20px; /* Reduced padding */
+        margin: 10px; /* Reduced margin */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        padding: 8px; /* Smaller padding for inputs and buttons */
+        margin: 5px 0; /* Reduced margin */
+    }
+
+    footer {
+        font-size: 1.2em; /* Smaller font size for footer */
+        padding: 10px 0; /* Reduced padding */
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        font-size: 2.5em; /* Slightly smaller than desktop */
+        padding: 30px 0; /* Adjusted padding */
+    }
+
+    section {
+        padding: 30px; /* Adjusted padding */
+        margin: 15px; /* Adjusted margin */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        padding: 9px; /* Adjusted padding */
+        margin: 8px 0; /* Adjusted margin */
+    }
+
+    footer {
+        font-size: 1.4em; /* Adjusted font size for footer */
+        padding: 15px 0; /* Adjusted padding */
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+    /* Keep current styles as they are optimized for larger screens */
+}
