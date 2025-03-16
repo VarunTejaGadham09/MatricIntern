@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate Planning</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessageDiv = document.getElementById('error-message');
+            errorMessageDiv.innerHTML = ''; // Clear previous error messages
+
+
+            let isValid = true;
+
+            if (!username) {
+                errorMessageDiv.innerHTML += '<p>Please enter your username.</p>';
+                isValid = false;
+            }
+
+            if (!password) {
+                errorMessageDiv.innerHTML += '<p>Please enter your password.</p>';
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Form submitted successfully!'); // You can replace this with actual submission logic
+
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#what-is-estate-planning">What is Estate Planning?</a></li>
+        <li><a href="#benefits">Benefits of Estate Planning</a></li>
+        <li><a href="#how-to-get-started">How to Get Started</a></li>
+        <li><a href="#login">Login</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Estate Planning</h1>
+    <p>Secure your legacy and protect your loved ones</p>
+</header>
+
+<section id="what-is-estate-planning">
+    <h2>What is Estate Planning?</h2>
+    <p>Estate planning is the process of arranging for the management and disposal of a person's estate during their life and after death. It involves making decisions about how your assets will be distributed and who will make decisions on your behalf if you become incapacitated.</p>
+</section>
+
+<section id="benefits">
+    <h2>Benefits of Estate Planning</h2>
+    <ul>
+        <li>Ensures your wishes are honored.</li>
+        <li>Minimizes estate taxes and legal fees.</li>
+        <li>Protects your assets from creditors.</li>
+        <li>Provides peace of mind for you and your family.</li>
+    </ul>
+</section>
+
+<section id="how-to-get-started">
+    <h2>How to Get Started</h2>
+    <p>Getting started with estate planning involves the following steps:</p>
+    <ol>
+        <li>Assess your assets and liabilities.</li>
+        <li>Determine your goals for your estate.</li>
+        <li>Consult with an estate planning attorney.</li>
+        <li>Create necessary documents, such as wills and trusts.</li>
+    </ol>
+</section>
+
+<footer>
+    <p>&copy; 2025 Estate Planning Services</p>
+</footer>
+
+<section id="login" style="text-align: center;">
+    <h2>Login</h2>
+    <form onsubmit="validateForm(event)" style="display: inline-block;">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <div id="error-message" style="color: red;"></div> <!-- Error messages will be displayed here -->
+
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+
+</body>
+</html>
