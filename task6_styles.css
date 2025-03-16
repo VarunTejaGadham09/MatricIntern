@@ -28,6 +28,42 @@ section {
 }
 
 #login {
+    background-color: #f9f9f9; /* Light background for the login section */
+    padding: 20px; /* Add padding to the login section */
+    border-radius: 10px; /* Rounded corners for the login section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the login section */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px; /* Increased padding for input fields */
+    margin: 10px 0; /* Margin for input fields */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-color: #7a0dd9; /* Change border color on hover */
+}
+
+button {
+    padding: 12px; /* Increased padding for the button */
+    background-color: #7a0dd9; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: #5a0bb9; /* Darker button color on hover */
+}
+
+
+#login {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the login form */
